@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Alex Farrell Webb</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "Author" content = "Alex Farrell Webb">   
+    <!--Change later--> 
+    <meta name = "description" content = "Brief summary of the life and times of one of history's great men">
+    <meta name = "keywords" content = "bravery, adventure, romance, death, everything in between">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <style>
+
+      body {
+        display: grid;
+        grid-template-columns: 200px auto;
+        grid-gap: 10px;
+        padding-left: 150px;
+        font-family: Arial, sans-serif;
+        background-color:#f6d3dc;
+       
+      }
+
+      main {
+        
+        height: 100%;
+        grid-column: 1 / 3;
+        float: right;
+        padding-bottom: 50px;
+        padding-left: 15px;
+      }
+
+        nav {
+            font-family: Arial, Helvetica, sans-serif;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            background-color: #6FA8DC;
+            display:flex;
+            flex-direction: column;
+            color: #fff;
+            padding: 20px;
+            height: 100vh;
+            grid-column: 1 / 2;
+        }
+
+  
+
+        nav a::after {
+            content: '';
+            display: block;
+            height: 10px;
+            }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.2s ease-in-out;
+            border-bottom: 1px solid #ccc;
+            padding: 12px 3px;
+            padding-bottom: 10px;
+            padding-top:15px;
+            margin-left: 5px;
+
+            color: #000;
+        }
+
+        nav a:first-child {
+           padding-top: 20px;
+        }
+
+        nav a:last-child {
+                padding-bottom: 20px;
+                border-bottom: none;
+        }
+
+
+        nav a.active {
+            font-weight: bold;
+            text-decoration: underline;
+            }
+
+
+        nav a:hover {
+            color: #ff0;
+            }            
+
+
+
+        h1{ 
+            font-size: 350%;
+            font-weight: bold;
+            text-align: center;
+            color: #333;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            }
+        h2{
+            font-size: 250%;
+            font-weight: bold;
+            text-align: center;
+            color: #333;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            }
+
+         h3{ 
+         font-size: 150%;
+         font-weight: bold;
+         text-align: center;
+         color: #333;
+         margin-top: 50px;
+         margin-bottom: 20px;
+            }              
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            }
+
+        a {
+            color: #0077cc;
+            text-decoration: none;
+            }
+        table {
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            width: 100%;
+            text-align: left;
+            }
+            caption {
+                font-size: 24px;
+                font-weight: bold;
+                text-align: center;
+                color: #333;
+                background-color: #f2f2f2;
+                padding: 10px;
+                border: 1px solid #38bb38;
+                border-bottom: none;
+                }
+
+            th, td {
+                padding: 12px;
+                text-align: left;
+                border: 1px solid #38bb38;
+                background-color: #ffffff;
+                }
+
+            th {
+                background-color: #e6ffe6;
+                font-weight: bold;
+                }
+
+        figure {
+
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            }       
+        
+            figure img {
+                display: block;
+                margin: 0 auto;
+                max-width: 100%;
+            }
+                figcaption {
+                text-align: center;
+            }
+
+        .container {
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            gap: 0px
+            
+            }
+
+            .container dl {
+                display: grid;
+                grid-template-columns: auto auto;
+                font-size: 30px;
+                margin-bottom: 10px;
+            
+            }
+
+            .container div {
+                display: contents;
+                }
+
+            .container dt {
+                grid-column: 1;
+                font-weight: bold;
+            }
+
+            .container dd {
+                grid-column: 2;
+                margin-left: 10px;
+            }
+
+ 
+
+            .container img {
+                max-width: 100%;
+                height: auto;
+                margin-left: 20px;
+                border-radius: 50%
+            }
+
+            .container figcaption {
+            
+                text-align: center;
+                margin-top: 5px;
+                margin-left: 30px;
+            }
+
+        footer {
+        position: static;
+        border-top: 1px solid #ccc;
+        bottom: 10%;
+        height:75px;
+        width: 100%;
+        background-color: #f8d9d9;
+        padding: 10px;
+        grid-column: 1/3;
+        text-align: center;
+        }    
+        footer p {
+            margin: 0
+        }
+
+
+    </style>
+</head>
+<body>
+   <main>
+        <article>
+            <header>
+                <!--Need to center this, do later with CSS-->
+                <h1>Alex Farrell Webb</h1>
+            </header>
+            <nav>
+                <a href="#personalInfo">Personal Info</a> 
+                <a href="#careerGoal">Career Goals</a> 
+                <a href="#education">Education</a>
+                <a href="#workEx/Placements">Work Experience, Placements</a> 
+                <a href="#skills">Skills</a> 
+                <a href="#hobbies,Interests,Achievements"> Hobbies, Interests & Achievements</a>
+            </nav>
+            <section id = "personalInfo">
+                <h2> Personal Information </h2>
+                    <div class ="container">
+                        <dl>
+                            <!-- <dt>Aliases:</dt>
+                            <dt>Alfal</dt> -->
+                            <dt>Age:</dt>
+                            <dd>27</dd>  
+                            <dt>Email Address:</dt> 
+                            <dd>farrellwebba@gmail.com</dd>
+                            <dt>Current Abode:</dt>
+                            <dd>Liverpool</dd>
+                            <dt>Occupation:</dt>
+                            <dd>Student</dd>
+                            <dt>LinkedIn page:</dt>
+                            <dd><a href="https://www.linkedin.com/in/alex-farrell-webb-631799254/"> https://www.linkedin.com/in/alex-farrell-webb-631799254/ </a> </dd>
+                        </dl>
+                        <figure>
+                        <img src ="myface.jpg" alt ="Image of an attractive young man" width =200>  
+                        <figcaption>Alex Jared Farrell Webb</figcaption>
+                        </figure>
+                        <!--Come back and move it to centre later--> 
+                    </div>
+            </section>
+            <section id = "careerGoal">
+                <h2>Career Goals</h2>   
+                <p> As someone who is pursuing a degree in Data Science, my career goals are centered around utilizing my skills and knowledge to drive business decisions and solve real-world problems. My ultimate goal is to become an expert in the field, constantly learning and staying up-to-date with the latest trends and technologies. I aim to work in a challenging and dynamic environment where I can apply my skills in data analysis, machine learning, and data visualization to drive insights and make data-driven recommendations. I am eager to work on complex data projects and be part of a team that is dedicated to using data to drive change and improve outcomes. Ultimately, I want to use my degree in Data Science to make a meaningful impact on the world, whether that be through working in the private sector, government, or non-profit organizations.</p>
+            </section>
+            <section id = "education">
+                <h2>Education History</h2>
+                    <ul>
+                        <li>
+                            <h3>BA French and English Literature</h3>
+                                <p>University of Edinburgh, Graduation Year : 2017</p>
+                                <p>My undergraduate degree was focussed on developing my critical analysis skills, and included a year abroad which I spent in Chartres, France</p>
+                        </li>
+                        <li>
+                            <h3>MSc Data Science and Artificial Intelligence</h3>
+                                <p>University of Liverpool, Graduation Year : 2023</p>
+                                <p>The course I'm currently attending, this has been an intense and extremely useful experience which is providing endless opportunities for personal and proffesional progression.</p>
+                        </li>
+                    </ul>
+            </section>
+            <section id = "workEx/Placements">
+                <h2>Work Experience and Placements</h2>
+                <p>Please find below a table containing my work experience up to this date:</p>
+                <table>
+                    <!--Include figure tag?-->
+                    <caption> My Work Experience to date</caption>
+                    <thead>    
+                        <tr>
+                        <th>Job Title</th>
+                        <th>Employer</th>
+                        <th>Duration</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>   
+                        <tr>
+                        <td>Crew Member</td>
+                        <td>McDonald's</td>
+                        <td>September 2013 - June 2017</td>
+                        <td>My first real job, this was a frantic and often stresfful experience which taught me valuable lessons <br> about working as part of a team</td>
+                        <td>Part-time</td>
+                        </tr>
+                        <tr>
+                        <td>Sales Associate</td>
+                        <td>Service Source</td>
+                        <td>September 2017 - July 2018</td>
+                        <td>This was the first full time job I ever had, and was my introduction proper to the world of work, here <br> I learned to deal with clients and how to manage my own pipeline</td>
+                        <td rowspan="2"> Full-time</td>
+                        </tr>
+                        <tr>
+                        <td>Assistant Language Teacher</td>
+                        <td>Kochi City Board of Education</td>
+                        <td>August 2018- August 2022</td>
+                        <td>The most fulfilling job I've ever done to date, I lived in <a href="https://en.wikipedia.org/wiki/Japan">Japan</a> for 4 years while working at local schools as an English teaching assistant. <br> Aside from how satisfying it is to help young children learn a new skill, this job helped me develop my own communication skills, as I was frequently required to engage with people with little to no English language skills, so I was required to be very adaptable with how I taught.</td>
+                        </tr>
+                    </tbody>
+                  </table>
+           </section>
+           <section id = "skills">
+            <h2>Skills</h2>
+                <h3> Languages </h3>
+                    <div> 
+                        In addition to my native English, I also speak the following languages:
+                        <ul>
+                            <li> French (Professional Fluency) -  <span lang="fr"> <em> Bonjour! Je vous invite à explorer mon site web. </em></span> </li>
+                            <li> Japanese (Professional Fluency) - <span lang="ja"> こんにちは！宜しくお願い致します！</span> </li>
+                            <li> Spanish (Basic) -  <span lang="es"><em> Hola!</em></span></li>
+                        </ul>
+                    </div>    
+                <h3>Programming Skills</h3>
+                    <div>I also possess a fair amount of competence in the following programming languages:
+                        <ul>
+                            <li>Python (Basic)</li>
+                            <li>SQL (Basic)</li>    
+                            <li> HTML (Basic)</li>
+                        </ul>
+                        For a taste of some of the projects I have worked on, please visit my <a href="https://github.com/AFWebb497"> GitHub page</a>    
+                   </div>
+           </section>
+           <section id = "hobbies,Interests,Achievements">
+            <h2>Hobbies, Interests and Achievements </h2>
+                <p>Over the course of my life I have amassed a formidable plethora of interests and hobbies, which I will try to list in
+                     no particular order now. It may be that I miss some of them here, but feel free to ask me later on for a comprehensive list!</p>
+                <p> During my time living abroad in Japan, I picked up a serious fondness for anime and manga, whici I try to read in the
+                     original Japanese as often as possible. In particular, I'm a huge fan of the Ghibli movies, although they're ostensibly meant for children I can't get enough of them!</p>
+                <p>As for sports, I'm an avid swimmer, and I try to swim at least three times a week. I find that it is a huge stress reliever, which is something desperately needed on this course!
+                   I have also recently started to play squash casually, and I can honestly say that no other sport make me reach the same level of sheer exhaustion, I can only play for 30 minutes or so before I'm on the ground wheezing</p> 
+                <p>Finally, I have recently started taking dance classes twice a week; I'm currently learning Bachata and Salsa dancing, and having a blast doing it!</p>
+                <figure>
+
+                    <img src="https://images.freeimages.com/images/large-previews/78f/swimming-feet-1617443.jpg" alt = "Pair of feet in swimming pool."  title="Pair of feet in swimming pool. &copy; Freeimages /data9090 2020" width="500">
+                    <figcaption> When my swimming feet get kicking, just you try and stop me!</figcaption>
+                </figure>    
+           </section>
+
+        </article>
+   </main>  
+   <footer>
+   <p> Most recent modification <em> <!--#flastmod file="index.html"--> </em> </p>
+   <p> Created by Alex Farrell Webb (sgafarr3@liverpool.ac.uk) </p>
+   <p>Unless otherwise indicated , all images &copy; A. Farrell Webb , 2022.</p>
+    
+   </footer>
+</body>
+</html>
